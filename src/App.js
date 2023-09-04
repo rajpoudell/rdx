@@ -1,6 +1,7 @@
 import './App.css';
-import  Profile  from './components/Profile';
 import LogIn from './components/LogIn';
+import { Profile } from './components/Profile';
+
 
 function App() {
   return (

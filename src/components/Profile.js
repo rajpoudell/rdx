@@ -1,12 +1,15 @@
 import React from 'react'
+import {useSelector } from 'react-redux'
 
-export const Profile = () => {
-  return (
+export  const Profile = () => {
+    const user = useSelector((state) => state.user.value)
+  return(
     <div>
-        <button>Profile Pagee</button>
-        <p>Name:</p>
-        <p>Age:</p>
-        <p>Email:</p>
+        <button>Profile Page</button>
+        <p>Name:{user.name}</p>
+        <p>Age:{user.age}</p>
+        <p>Email: {user.email}</p>
     </div>
   )
 }
+export default Profile
