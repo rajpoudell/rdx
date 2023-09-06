@@ -7,7 +7,11 @@
    return (
      <div>
         <button onClick={() => {
-          dispatch(login({name: "Raj", age:20, email: "rajpoudel@gmail.com"}));
+
+          dispatch(login({
+          name: "Raj", 
+          age:20, 
+          email: "rajpoudel@gmail.com"}));
           
           }}>Log In</button>
     </div>
